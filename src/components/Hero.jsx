@@ -14,22 +14,15 @@ const Hero = () => {
       <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>
         AMAZING BEAUTÉ COSMETIC TATTOO STUDIO
       </h1>
-      <a
-        href="https://amazingbeaute.glossgenius.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{
-          marginTop: '1rem',
-          padding: '0.75rem 2rem',
-          backgroundColor: '#ffffff',
-          color: '#000',
-          border: '1px solid #fff',
-          borderRadius: '5px',
-          fontWeight: 'bold'
-        }}
-      >
-        BOOK NOW
-      </a>
+	<a
+	  href="https://amazingbeaute.glossgenius.com/services"
+	  target="_blank"
+	  rel="noopener noreferrer"
+	  className="hero-book-btn"
+	>
+	  BOOK NOW
+	</a>
+
     </section>
   );
 };

@@ -5,10 +5,11 @@ import Hero from './components/Hero';
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-    </>
+    	<div className="page-wrapper">
+  		<Navbar />
+		<Hero />
+	</div>
+
   );
 }
 
