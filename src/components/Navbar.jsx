@@ -1,26 +1,20 @@
 import React from 'react';
+import './Navbar.css';
 
 const Navbar = () => {
   return (
-    <nav style={{
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      padding: '1rem 2rem',
-      backgroundColor: 'rgba(0, 0, 0, 0.7)',
-      color: 'white',
-      position: 'fixed',
-      width: '100%',
-      top: 0,
-      zIndex: 1000
-    }}>
-      <div style={{ fontWeight: 'bold' }}>AMAZING BEAUTÉ</div>
-      <div style={{ display: 'flex', gap: '1rem' }}>
-        <a href="#about">ABOUT</a>
-        <a href="#services">SERVICES</a>
-        <a href="#packages">PACKAGES</a>
-        <a href="#contact">CONTACT</a>
-        <a href="https://amazingbeaute.glossgenius.com" target="_blank" rel="noreferrer">BOOK NOW</a>
+    <nav className="navbar">
+      <ul className="nav-links">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#packages">PACKAGES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="https://amazingbeaute.glossgenius.com/services" target="_blank" 		rel="noopener noreferrer">BOOK NOW</a></li>
+      </ul>
+      <div className="nav-icons">
+        <a href="#"><i className="fa fa-facebook"></i></a>
+        <a href="#"><i className="fa fa-instagram"></i></a>
+        <a href="#"><i className="fa fa-globe"></i></a>
       </div>
     </nav>
   );
