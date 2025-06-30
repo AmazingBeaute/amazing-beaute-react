@@ -10,6 +10,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
+  color: white;
 }
 
 body::before {
@@ -46,6 +47,27 @@ body::before {
   text-decoration: none;
   font-weight: 400;
   letter-spacing: 2px;
+}
+
+.nav-links li a.active {
+  color: #f0c040;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-links li a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #f0c040;
+}
+
+.nav-links li a:hover {
+  color: #f0c040;
+  transition: color 0.3s ease;
 }
 
 .book-now-btn {
