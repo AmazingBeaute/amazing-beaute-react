@@ -1,77 +1,26 @@
 import React from 'react';
 
-const Gallery = () => {
-  // Sample Instagram-style posts data
-  const instagramPosts = [
-    {
-      id: 1,
-      image: '/images/hero.jpg',
-      caption: 'Fresh microblading work ✨ Beautiful natural brows that enhance your features #microblading #browsonfleek',
-      likes: 127,
-      date: '2 days ago'
-    },
-    {
-      id: 2,
-      image: '/images/hero.jpg',
-      caption: 'Lip blush perfection 💋 Enhancing natural beauty with subtle color #lipblush #cosmetictattoo',
-      likes: 95,
-      date: '4 days ago'
-    },
-    {
-      id: 3,
-      image: '/images/hero.jpg',
-      caption: 'Before and after eyebrow transformation 🌟 The power of perfect brows! #browstransformation',
-      likes: 203,
-      date: '1 week ago'
-    },
-    {
-      id: 4,
-      image: '/images/hero.jpg',
-      caption: 'Healing beautifully! Day 7 post microblading session ✨ #healingprocess #microblading',
-      likes: 89,
-      date: '1 week ago'
-    },
-    {
-      id: 5,
-      image: '/images/hero.jpg',
-      caption: 'Eyeliner tattoo for effortless beauty every day 👁️ Wake up ready! #eyelinertattoo',
-      likes: 156,
-      date: '2 weeks ago'
-    },
-    {
-      id: 6,
-      image: '/images/hero.jpg',
-      caption: 'Client testimonial: "Best decision I ever made!" 💕 #happyclient #amazingbeaute',
-      likes: 134,
-      date: '2 weeks ago'
-    }
-  ];
+const galleryImages = [
+  { id: 1, src: '/images/hero.jpg', alt: 'Microblading result' },
+  { id: 2, src: '/images/hero.jpg', alt: 'Lip blush result' },
+  { id: 3, src: '/images/hero.jpg', alt: 'Eyeliner tattoo result' },
+  { id: 4, src: '/images/hero.jpg', alt: 'Brow lamination' },
+  { id: 5, src: '/images/hero.jpg', alt: 'Client selfie' },
+  { id: 6, src: '/images/hero.jpg', alt: 'Studio shot' },
+];
 
+const Gallery = () => {
   return (
     <section className="gallery-section">
-      <div className="gallery-container">
-        <h2 className="gallery-title">Our Work</h2>
-        <p className="gallery-subtitle">Follow our journey on Instagram</p>
-        
-        <div className="instagram-grid">
-          {instagramPosts.map(post => (
-            <div key={post.id} className="instagram-post">
-              <div className="post-image-container">
-                <img src={post.image} alt="Instagram post" className="post-image" />
-                <div className="post-overlay">
-                  <div className="post-stats">
-                    <span className="likes">♥ {post.likes}</span>
-                  </div>
-                </div>
-              </div>
-              <div className="post-content">
-                <p className="post-caption">{post.caption}</p>
-                <span className="post-date">{post.date}</span>
-              </div>
+      <div className="container">
+        <h2 className="section-title">Our Work</h2>
+        <div className="gallery-grid">
+          {galleryImages.map(image => (
+            <div key={image.id} className="gallery-item">
+              <img src={image.src} alt={image.alt} />
             </div>
           ))}
         </div>
-        
         <div className="follow-us">
           <a 
             href="https://instagram.com/amazingbeaute" 
