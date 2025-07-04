@@ -1,14 +1,8 @@
 {
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["/images/*.{png,jpg,gif}", "/*.css", "/*.js", "/*.ico"]
+    "exclude": ["/images/*", "/assets/*", "*.css", "*.js", "*.ico", "*.json"]
   },
-  "routes": [
-    {
-      "route": "/*",
-      "rewrite": "/index.html"
-    }
-  ],
   "responseOverrides": {
     "404": {
       "rewrite": "/index.html",
