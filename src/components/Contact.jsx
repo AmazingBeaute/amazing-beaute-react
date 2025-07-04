@@ -10,7 +10,7 @@ const Contact = () => {
             <h3>Contact Information</h3>
             <p>4810 Beauregard Street, Suite 304<br />Alexandria, VA, United States, Virginia</p>
             <p><a href="tel:+15714558255">(571) 455-8255</a></p>
-            <p><a href="mailto:amazingbeaute.llc@gmail.com">amazingbeaute.llc@gmail.com</a></p>
+            <p><a href="mailto:amazingbeaute4u@gmail.com">amazingbeaute4u@gmail.com</a></p>
           </div>
           <div className="contact-cta">
             <h3>Book Your Consultation</h3>
