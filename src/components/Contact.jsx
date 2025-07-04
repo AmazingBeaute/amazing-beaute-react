@@ -8,8 +8,8 @@ const Contact = () => {
         <div className="contact-grid">
           <div className="contact-info">
             <h3>Contact Information</h3>
-            <p>4810 Beauregard St, Suite 304<br />Alexandria, VA 22312</p>
-            <p><a href="tel:+15713348781">(571) 334-8781</a></p>
+            <p>4810 Beauregard Street, Suite 304<br />Alexandria, VA, United States, Virginia</p>
+            <p><a href="tel:+15714558255">(571) 455-8255</a></p>
             <p><a href="mailto:amazingbeaute.llc@gmail.com">amazingbeaute.llc@gmail.com</a></p>
           </div>
           <div className="contact-cta">

@@ -23,7 +23,7 @@ const Gallery = () => {
         </div>
         <div className="follow-us">
           <a 
-            href="https://instagram.com/amazingbeaute" 
+            href="https://instagram.com/amazingbeaute4u" 
             target="_blank" 
             rel="noopener noreferrer"
             className="follow-btn"
