@@ -8,6 +8,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
+import Aftercare from './components/Aftercare';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/aftercare" element={<Aftercare />} />
         </Routes>
       </div>
     </Router>

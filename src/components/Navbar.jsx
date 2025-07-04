@@ -39,6 +39,7 @@ const Navbar = () => {
               <li><Link to="/services" className={location.pathname === '/services' ? 'active' : ''} onClick={closeMenu}>SERVICES</Link></li>
               <li><Link to="/gallery" className={location.pathname === '/gallery' ? 'active' : ''} onClick={closeMenu}>GALLERY</Link></li>
               <li><Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''} onClick={closeMenu}>CONTACT</Link></li>
+              <li><Link to="/aftercare" className={location.pathname === '/aftercare' ? 'active' : ''} onClick={closeMenu}>AFTERCARE</Link></li>
               <li>
                   <a 
                   href="https://amazingbeaute.glossgenius.com/services" 
